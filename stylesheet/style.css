@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    html {
+        font-family: "Abhaya Libre", serif;
+    }
+}
+
+.main-bg {
+    --primary: #060606;
+    --neutral: #dcb410;
+
+    background-color: var(--primary);
+}
+
+.queries-bg {
+    background: rgb(6, 6, 6);
+    background: linear-gradient(
+        0deg,
+        rgba(6, 6, 6, 1) 0%,
+        rgba(255, 255, 255, 1) 100%
+    );
+}
+
+.invert {
+    transform: rotate(180deg);
+    transition: all 250 ease-in;
+}
